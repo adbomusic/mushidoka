@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NUESTRO EQUIPO</title>
+  <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Press Start 2P', cursive;
+      background: #000;
+      overflow-x: hidden;
+      background-image: url(fondo2.gif);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+
+
+    @keyframes moveBG {
+      0% { background-position: 0 0; }
+      100% { background-position: -1200px 1200px; }
+    }
+    header {
+      padding: 20px;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+    }
+
+    /* Botones con efecto de respiración */
+    @keyframes breathing {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-6px); }
+      100% { transform: translateY(0); }
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #00eaff;
+      background: #111;
+      padding: 15px 25px;
+      border-radius: 50px;
+      font-size: 14px;
+      border: 2px solid #00eaff;
+      box-shadow: 0 0 12px #00eaff;
+      transition: 0.3s;
+      animation: breathing 2.4s ease-in-out infinite;
+    }
+
+    nav a:hover {
+      background: #00eaff;
+      color: #000;
+      box-shadow: 0 0 25px #00eaff;
+      transform: scale(1.12);
+    }
+
+    /* Secciones */
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 40px;
+      background: rgba(0, 0, 0, 0.75);
+      border: 2px solid #00eaff;
+      border-radius: 10px;
+      color: #fff;
+      box-shadow: 0 0 15px #00eaff;
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: #00eaff;
+      text-shadow: 0 0 10px #00eaff;
+    }
+
+    .justificado {
+    text-align: justify;
+    hyphens: auto; 
+}
+  </style>
+</head>
+<body>
+
+  <div class="pixel-bg"></div>
+
+  <header>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="descargar.html">Descargar</a>
+      <a href="quienes.html">Quienes Somos</a>
+    </nav>
+  </header>
+  <section id="quienes">
+    <h2>NUESTRO EQUIPO</h2>
+    <div class="justificado">
+    <p>Somos un equipo de estudiantes de la Unidad Educativa Baños motivados por la creación de juegos. Nuestro objetivo es revivir la magia de los shooters pixelados clásicos.</p>
+    </div>
+</section>
+
+  <section id="quienes">
+    <h2>AUTORES</h2>
+    <div class="justificado">
+    <p style="text-align:center; margin-bottom:30px;">Cada uno de nostros ayudó significativamente en el desarrollo del juego, desarrolo de estrategías, desarrollo de los sitios web y la historia de MUSHIDOKA</p>
+    </div>
+    <div class="team-container" style="display:flex; justify-content:center; gap:40px; flex-wrap:wrap; margin-top:30px;">
+      <div class="team-card" style="width:250px; background:rgba(0,0,0,0.6); border:2px solid #00eaff; border-radius:10px; padding:20px; text-align:center; box-shadow:0 0 12px #00eaff;">
+        <div class="foto" style="width:100%; height:200px; background:#111; border:2px solid #00eaff; border-radius:8px; margin-bottom:10px;">
+    
+    </div>
+
+        <h3 style="color:#00eaff; font-size:14px; text-shadow:0 0 8px #00eaff;">Santiago Vera</h3>
+        <p style="font-size:12px; color:#fff;">Actualmente estudiante de la Unidad Educativa Baños, guionista y programador fundamental de MUSHIDOKA</p>
+      </div>
+      <div class="team-card" style="width:250px; background:rgba(0,0,0,0.6); border:2px solid #00eaff; border-radius:10px; padding:20px; text-align:center; box-shadow:0 0 12px #00eaff;">
+        <div class="foto" style="width:100%; height:200px; background:#111; border:2px solid #00eaff; border-radius:8px; margin-bottom:10px;">
+    <img src="fernando.jpg" style="width: 100px; height:100%; object-fit:cover; border-radius:8px;">
+</div>
+        <h3 style="color:#00eaff; font-size:14px; text-shadow:0 0 8px #00eaff;">Elkyn Zambrano</h3>
+        <p style="font-size:12px; color:#fff;">Actualmente estudiante de la Unidad Educativa Baños, nacido en Quito el 5 de marzo del 2007 guionista, diseñador y prodcutor de las pistas fundamental de MUSHIDOKA</p>
+      </div>
+
+      <div class="team-card" style="width:250px; background:rgba(0,0,0,0.6); border:2px solid #00eaff; border-radius:10px; padding:20px; text-align:center; box-shadow:0 0 12px #00eaff;">
+        <div class="foto" style="width:100%; height:200px; background:#111; border:2px solid #00eaff; border-radius:8px; margin-bottom:15px; background-size:cover; background-position:center;">
+        </div>
+        <h3 style="color:#00eaff; font-size:14px; text-shadow:0 0 8px #00eaff;">Christopher Telenchano</h3>
+        <p style="font-size:12px; color:#fff;">Actualmente estudiante de la Unidad Educativa Baños, guionista, programador secundario y ayudante en diseño fundamental de MUSHIDOKA</p>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+</html>
