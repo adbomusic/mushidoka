@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Página Arcade</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Press Start 2P', cursive;
+      background: #000;
+      overflow-x: hidden;
+      background-image: url(fondo2.gif);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    
+
+    @keyframes moveBG {
+      0% { background-position: 0 0; }
+      100% { background-position: -1200px 1200px; }
+    }
+
+    header {
+      padding: 20px;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+    }
+
+    @keyframes breathing {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-6px); }
+      100% { transform: translateY(0); }
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #00eaff;
+      background: #111;
+      padding: 15px 25px;
+      border-radius: 50px;
+      font-size: 14px;
+      border: 2px solid #00eaff;
+      box-shadow: 0 0 12px #00eaff;
+      transition: 0.3s;
+      animation: breathing 2.4s ease-in-out infinite;
+    }
+
+    nav a:hover {
+      background: #00eaff;
+      color: #000;
+      box-shadow: 0 0 25px #00eaff;
+      transform: scale(1.12);
+    }
+
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 40px;
+      background: rgba(0, 0, 0, 0.75);
+      border: 2px solid #00eaff;
+      border-radius: 10px;
+      color: #fff;
+      box-shadow: 0 0 15px #00eaff;
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: #00eaff;
+      text-shadow: 0 0 10px #00eaff;
+    }
+  </style>
+</head>
+<body class="fondo">
+
+  <div class="pixel-bg"></div>
+
+  <header>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="descargar.html">Descargar</a>
+      <a href="quienes.html">Quienes Somos</a>
+    </nav>
+  </header>
+
+
+  <section id="descargar">
+    <h2>Descarga de MUSHIDOKA</h2>
+    <p>Aquí podrás descargar el juego y unirte a la batalla espacial.</p>
+    <center>
+    <a href="Mushidoka.exe" style="color:#aa12af; font-weight:bold; text-shadow:0 0 5px #8c18a3;">Descargar ahora</a>
+    </center>
+  </section>
+
+
+</body>
+</html>
